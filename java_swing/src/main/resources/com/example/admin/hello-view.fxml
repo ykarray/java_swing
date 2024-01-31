@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<TabPane prefHeight="700.0" prefWidth="700.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.admin.HelloController">
+    <tabs>
+        <Tab text="Page 1">
+            <content>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="702.0" style="-fx-background-color: #bbd4ce;">
+                    <children>
+                        <BarChart fx:id="barchart" layoutX="9.0" layoutY="4.0" prefHeight="256.0" prefWidth="300.0">
+                            <xAxis>
+                                <CategoryAxis side="BOTTOM" />
+                            </xAxis>
+                            <yAxis>
+                                <NumberAxis side="LEFT" />
+                            </yAxis>
+                        </BarChart>
+                        <Text layoutX="109.0" layoutY="603.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nourriture" />
+                        <PieChart fx:id="animation" layoutX="372.0" layoutY="7.0" prefHeight="233.0" prefWidth="300.0" />
+                        <Text layoutX="486.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Animation" />
+                        <PieChart fx:id="food" layoutX="36.0" layoutY="312.0" prefHeight="256.0" prefWidth="290.0" />
+                        <Text layoutX="107.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Homme/Femme" />
+                        <LineChart fx:id="prop" layoutX="369.0" layoutY="304.0" prefHeight="272.0" prefWidth="300.0">
+                            <xAxis>
+                                <CategoryAxis side="BOTTOM" />
+                            </xAxis>
+                            <yAxis>
+                                <NumberAxis side="LEFT" />
+                            </yAxis>
+                        </LineChart>
+                        <Text layoutX="509.0" layoutY="603.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Propreté" wrappingWidth="62.82763671875" />
+                    </children>
+                </AnchorPane>
+
+            </content>
+        </Tab>
+        <Tab text="page 2">
+            <content>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="702.0" style="-fx-background-color: #bbd4ce;">
+               <children>
+                  <PieChart fx:id="season" layoutX="14.0" layoutY="14.0" prefHeight="250.0" prefWidth="273.0" />
+                  <Text layoutX="103.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saison" />
+               </children></AnchorPane>
+            </content>
+        </Tab>
+
+
+    </tabs>
+
+</TabPane>
